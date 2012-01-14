@@ -8,8 +8,7 @@
  *
  * jQuery(selector).basicColorPicker();
  * jQuery(selector).basicColorPicker({ size: "20px" });
- * jQuery(selector).basicColorPicker(null, function(color, ele) {
- *      // jQuery(ele).hide(0);
+ * jQuery(selector).basicColorPicker(null, function(color) {
  *      alert(color);
  * });
  *
@@ -20,7 +19,6 @@
  * you can also subscribe to the eventHandler
  *
  * jQuery(selector).bind("picker:selected", function(e){
- *     // jQuery(e.target).hide(0);
  *     alert(e.color);
  * });
  *
