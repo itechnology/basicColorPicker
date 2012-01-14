@@ -3,9 +3,11 @@
 * A compact and simple color picker
 
 **What you don't get**
+
 * Funky transitions, hover effect, or animations
 
 **Try it**
+
 * [DEMO](http://itechnology.github.com/basicColorPicker/)
 
 **Signature**
