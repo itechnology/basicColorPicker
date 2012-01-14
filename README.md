@@ -1,10 +1,9 @@
 **What you get**
 
-* A compact and simple color picker
+*A compact and simple color picker
 
 **What you don't get**
-
-* Funky transitions, hover effect, or animations
+*Funky transitions, hover effect, or animations
 
 
 * [DEMO](http://itechnology.github.com/basicColorPicker/)
