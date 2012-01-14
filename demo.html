@@ -1,17 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>basicColorPicker</title>
+    <title>jQuery.basicColorPicker</title>
     <style>
         .group:before, .group:after {content: ""; display: table;}
         .group:after {clear: both;}
 
         #picker, .menu {
             width : 120px; /* only thing needed for picker */
+
             border: 1px solid black;
             margin: 2px;
-
-            background-color: pink;
         }
         .menu {
             cursor: pointer;
@@ -22,14 +21,24 @@
 </head>
 <body>
     <div>
-        <div onclick="jQuery('#picker').toggle(300)"class="menu">X</div>
+        <div class="menu">X</div>
         <div id="picker" class="group"></div>
     </div>
 
     <script>
         jQuery(document).ready(function() {
-            jQuery("#picker").basicColorPicker(null, function(color) { alert(color); }).hide(300);
-            jQuery("#picker").on("picker:selected", function(e) { alert(e.color); });
+            jQuery("#picker").basicColorPicker({}, function(color) {
+                alert(color);
+            });
+
+            jQuery("#picker").bind("picker:selected", function(e) {
+                alert(e.color);
+            });
+
+
+            jQuery(".menu").click(function() {
+                jQuery('#picker').toggle(0);
+            });
         });
     </script>
 </body>

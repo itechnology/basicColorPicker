@@ -1,9 +1,28 @@
-/**
- * Created by JetBrains WebStorm.
- * User: Robert
- * Date: 14/01/12
- * Time: 14:59
- * To change this template use File | Settings | File Templates.
+/**************************
+ * Author : Robert Hoffmann
+ * License: MIT/BSD
+ * Date   : 14/01/12
+ * Version: 1.0
+ **************************
+ * Sample Usages
+ *
+ * jQuery(selector).basicColorPicker();
+ * jQuery(selector).basicColorPicker({ size: "20px" });
+ * jQuery(selector).basicColorPicker(null, function(color) {
+ *      alert(color);
+ * });
+ *
+ **************************
+ * Subscribe to EvenHandler
+ *
+ * Instead of using the callBack as shown above,
+ * you can also subscribe to the eventHandler
+ *
+ * jQuery(selector).bind("picker:selected", function(e){
+ *     alert(e.color);
+ * });
+ *
+ * **************************
  */
 jQuery.fn.basicColorPicker = function (options, callBack) {
     options  = options  || { };
@@ -13,8 +32,7 @@ jQuery.fn.basicColorPicker = function (options, callBack) {
     var guid = jQuery.guid;
     var opt  = {
         colors  : ["#000000", "#575757", "#A0A0A0", "#FFFFFF", "#2A4BD7", "#1D6914", "#814A19", "#8126C0", "#9DAFFF", "#81C57A", "#E9DEBB", "#AD2323", "#29D0D0", "#FFEE33", "#FF9233", "#FFCDF3"],
-        size    : "30px",
-        hide    : true
+        size    : "30px"
     };
 
     jQuery.extend(opt, options);
@@ -33,10 +51,6 @@ jQuery.fn.basicColorPicker = function (options, callBack) {
         });
 
         item.click(function (e) {
-            if (opt.hide) {
-                that.hide(0);
-            }
-
             var selected = jQuery(this).css("background-color");
 
             callBack(selected);
