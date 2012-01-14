@@ -3,17 +3,33 @@
 <head>
     <title>jQuery.basicColorPicker</title>
     <style>
+        /* This is the only thing needed for picker
+         * Depending on the size here + the size of the color boxes (default 30px)
+         * You get: 120/30 = 4 colors/row
+         */
+        #picker1, #picker2 {
+            width : 120px;
+        }
+
+
+        /******************************************
+         * Extra stuff used just in this demo page
+         ******************************************/
+        body {
+            margin: 50px auto;
+            width : 720px;
+        }
+
         /* http://nicolasgallagher.com/micro-clearfix-hack/ */
         .group:before, .group:after {content: ""; display: table;}
         .group:after {clear: both;}
 
-        #picker, .menu {
-            width : 120px; /* only thing needed for picker */
-
+        #picker1, #picker2, .menu {
             border: 1px solid black;
             margin: 2px;
         }
         .menu {
+            width : 120px;
             cursor: pointer;
         }
     </style>
@@ -21,25 +37,42 @@
     <script src="jQuery.basicColorPicker.js"></script>
 </head>
 <body>
+    <h3>Sample Usages</h3>
+
+    <h5>Simple CallBack</h5>
     <div>
-        <div class="menu">X</div>
-        <div id="picker" class="group"></div>
+        <div class="menu" onclick="jQuery('#picker1').toggle();">X</div>
+        <div id="picker1" class="group"></div>
+        <pre>
+            jQuery("#picker1").basicColorPicker({}, function(color) {
+                alert(color);
+            });
+        </pre>
+    </div>
+
+    <h5>Event Binding</h5>
+    <div>
+        <div class="menu" onclick="jQuery('#picker2').toggle();">X</div>
+        <div id="picker2" class="group"></div>
+        <pre>
+            jQuery("#picker2").basicColorPicker();
+            jQuery("#picker2").bind("picker:selected", function(e) {
+                alert(e.color);
+            });
+        </pre>
     </div>
     
+    <a href="https://github.com/itechnology/basicColorPicker">Source on Github</a>
+
     <script>
-        jQuery(document).ready(function() {            
-            jQuery("#picker").basicColorPicker({}, function(color, ele) {
-                // jQuery(ele).hide(0);
+        jQuery(document).ready(function() {
+            jQuery("#picker1").basicColorPicker({}, function(color) {
                 alert(color);
             });
 
-            jQuery("#picker").bind("picker:selected", function(e) {
-                // jQuery(e.target).hide(0);
+            jQuery("#picker2").basicColorPicker();
+            jQuery("#picker2").bind("picker:selected", function(e) {
                 alert(e.color);
-            });
-
-            jQuery(".menu").click(function() {
-                jQuery('#picker').toggle(0);
             });
         });
     </script>

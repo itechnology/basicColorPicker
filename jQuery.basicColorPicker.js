@@ -29,7 +29,7 @@
 (function($, undefined){
     $.fn.basicColorPicker = function (options, callBack) {
         options  = options  || { };
-        callBack = callBack || function (e) { };
+        callBack = callBack || function (c) { };
 
         var that = this;
         var guid = $.guid;
@@ -56,7 +56,7 @@
             item.click(function (e) {
                 var selected = $(this).css("background-color");
 
-                callBack(selected, that);
+                callBack(selected);
                 $(that).triggerHandler({ type: "picker:selected", color: selected });
             });
 
