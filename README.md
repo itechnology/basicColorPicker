@@ -5,7 +5,7 @@
 **What you don't get**
 *Funky transitions, hover effect, or animations
 
-** Try it**
+**Try it**
 *[DEMO](http://itechnology.github.com/basicColorPicker/)
 
 **Signature**
