@@ -8,7 +8,7 @@
  *
  * jQuery(selector).basicColorPicker();
  * jQuery(selector).basicColorPicker({ size: "20px" });
- * jQuery(selector).basicColorPicker(null, function(color) {
+ * jQuery(selector).basicColorPicker({}, function(color) {
  *      alert(color);
  * });
  *
