@@ -1,0 +1,34 @@
+{
+    "name": "jQuery.basicColorPicker",
+    "version": "1.0.1",
+    "title": "jQuery.basicColorPicker()",
+    "author": {
+        "name": "Robert Hoffmann",
+        "url": "https://github.com/itechnology"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "Very simple color picker for jQuery",
+    "keywords": [
+        "jquery",
+        "color",
+        "picker"
+    ],
+    "homepage": "https://github.com/itechnology/basicColorPicker",
+    "maintainers": [
+        {
+            "name": "Robert Hoffmann",
+            "url": "https://github.com/itechnology"
+        }
+    ],
+    "files": [
+        "jQuery.basicColorPicker.js"
+    ]
+}

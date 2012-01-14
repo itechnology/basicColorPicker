@@ -1,6 +1,6 @@
 /**************************
  * Author : Robert Hoffmann
- * License: MIT/BSD
+ * License: MIT
  * Date   : 14/01/12
  * Version: 1.0.1
  **************************
