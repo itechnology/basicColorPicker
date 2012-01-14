@@ -25,14 +25,9 @@
         <div class="menu">X</div>
         <div id="picker" class="group"></div>
     </div>
-
+    
     <script>
-        jQuery(document).ready(function() {
-            if (jQuery.browser.msie) {
-                alert("Sorry github breaks this page,\nplease try in another browser or locally");
-                return;
-            }
-            
+        jQuery(document).ready(function() {            
             jQuery("#picker").basicColorPicker({}, function(color, ele) {
                 // jQuery(ele).hide(0);
                 alert(color);
