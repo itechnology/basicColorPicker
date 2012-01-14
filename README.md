@@ -1,5 +1,7 @@
 Very simple & generic color picker for use with jQuery
 
+* [link DEMO](http://itechnology.github.com/basicColorPicker/)
+
 * Signature
 jQuery(selector)
     .basicColorPicker(object options, function callBack) returns jQuery Object
