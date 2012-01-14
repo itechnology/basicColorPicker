@@ -26,6 +26,7 @@
 
 
 **Subscribe to EvenHandler**
+
 *Instead of using the callBack as shown above, you can also subscribe to the eventHandler*
 
     jQuery(selector).bind("picker:selected", function(e){
