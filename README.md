@@ -1,4 +1,11 @@
-Very simple & generic color picker for use with jQuery
+Very simple color picker for jQuery
+
+**What you get**
+* A compact and simple color picker
+
+**What you don't get**
+* Funky transitions, hover effect, or animations
+
 
 * [DEMO](http://itechnology.github.com/basicColorPicker/)
 
