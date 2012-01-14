@@ -1,6 +1,7 @@
 **What you get**
 
 * A compact and simple color picker
+* Customize what you like yourself
 
 **What you don't get**
 
