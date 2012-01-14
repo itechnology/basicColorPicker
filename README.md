@@ -5,7 +5,7 @@
 
 **What you don't get**
 
-* Funky transitions, hover effect, or animations
+* Funky transitions, hover effects, or animations
 
 **Try it**
 
