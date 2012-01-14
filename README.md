@@ -6,7 +6,7 @@
 *Funky transitions, hover effect, or animations
 
 **Try it**
-*[DEMO](http://itechnology.github.com/basicColorPicker/)
+[DEMO](http://itechnology.github.com/basicColorPicker/)
 
 **Signature**
 
