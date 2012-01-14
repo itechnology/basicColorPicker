@@ -28,6 +28,11 @@
 
     <script>
         jQuery(document).ready(function() {
+            if (jQuery.browser.msie) {
+                alert("Sorry github breaks this page,\nplease try in another browser or locally");
+                return;
+            }
+            
             jQuery("#picker").basicColorPicker({}, function(color, ele) {
                 // jQuery(ele).hide(0);
                 alert(color);
