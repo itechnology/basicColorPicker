@@ -3,6 +3,7 @@
 <head>
     <title>jQuery.basicColorPicker</title>
     <style>
+        /* http://nicolasgallagher.com/micro-clearfix-hack/ */
         .group:before, .group:after {content: ""; display: table;}
         .group:after {clear: both;}
 
@@ -27,14 +28,15 @@
 
     <script>
         jQuery(document).ready(function() {
-            jQuery("#picker").basicColorPicker({}, function(color) {
+            jQuery("#picker").basicColorPicker({}, function(color, ele) {
+                // jQuery(ele).hide(0);
                 alert(color);
             });
 
             jQuery("#picker").bind("picker:selected", function(e) {
+                // jQuery(e.target).hide(0);
                 alert(e.color);
             });
-
 
             jQuery(".menu").click(function() {
                 jQuery('#picker').toggle(0);
