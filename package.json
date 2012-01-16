@@ -29,7 +29,6 @@
         }
     ],
     "files": [
-        "src/jQuery.basicColorPicker.js",
-        "src/jQuery.basicColorPicker.min.js"
+        "src/jQuery.basicColorPicker.js"
     ]
 }

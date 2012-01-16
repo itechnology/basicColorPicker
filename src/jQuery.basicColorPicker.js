@@ -30,17 +30,16 @@
         callBack = callBack || function (c) { };
 
         var that = this;
-        var guid = $.guid;
         var opt  = {
             colors  : ["#000000", "#575757", "#A0A0A0", "#FFFFFF", "#2A4BD7", "#1D6914", "#814A19", "#8126C0", "#9DAFFF", "#81C57A", "#E9DEBB", "#AD2323", "#29D0D0", "#FFEE33", "#FF9233", "#FFCDF3"],
-            size    : "30px"
+            size    : "30px",
+            class   : "item"
         };
 
         $.extend(opt, options);
 
-        that.append("<div class='picker-" + guid + "'></div>");
         $(opt.colors).each(function (index, value) {
-            var item = $("<div></div>");
+            var item = $("<div class='" + opt.class + "'></div>");
 
             item.css({
                 "background-color": value,
@@ -58,7 +57,7 @@
                 $(that).triggerHandler({ type: "picker:selected", color: selected });
             });
 
-            that.find(".picker-" + guid).append(item);
+            that.append(item);
         });
 
         return that;
