@@ -13,7 +13,7 @@
         }
     ],
     "dependencies": {
-        "jquery": "1"
+        "jquery": ">=3.4.0"
     },
     "description": "Very simple color picker for jQuery",
     "keywords": [
